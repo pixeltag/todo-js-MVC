@@ -1,0 +1,88 @@
+body {
+    background: #d3c0da; 
+    background: -moz-linear-gradient(-45deg, #d3c0da 0%, #82bcf1 100%); 
+    background: -webkit-linear-gradient(-45deg, #d3c0da 0%,#82bcf1 100%); 
+    background: linear-gradient(135deg, #d3c0da 0%,#82bcf1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3c0da', endColorstr='#82bcf1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    line-height: 1.6;
+}
+
+.container {
+    padding: 0 15px;
+    max-width: 42em;
+    margin: 0 auto;
+} 
+
+
+.form-group {
+    display: block;
+    margin-bottom: 0.5em;
+    .form-control {
+        display: block;
+        width: 100%;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5; 
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        font-family: inherit;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+}
+
+.align-right {
+    text-align: center;
+    margin: 2em 0;
+}
+
+
+.btn-primary {
+    border: 0;
+    background: #2798f7;
+    color: #fff;
+    border-radius: 2px;
+    padding: 0.8em 3em;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1;
+    line-height: 1.4;
+    transition:all 0.3s ease;
+    cursor: pointer;
+    font-weight: 500;
+    &:hover {
+        background: lighten(#2798f7, 10%) ;
+    }
+}
+
+
+.hidden  {
+    display: none;
+}
+
+
+
+.add-new-tasks-btn {
+    position: absolute;
+    background: #2798f7;
+    bottom: 3em;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    right: 3em;
+    border: 0;
+    box-shadow: 0 0 23px -2px #5a9db3;
+    cursor: pointer;
+    z-index: 1;
+    transition:all 0.3s ease;
+    svg {
+        fill:#fff;
+        height: 18px;
+        width: 18px;
+    }
+    &:hover {
+        background: lighten(#2798f7, 10%) ;
+    }
+}
